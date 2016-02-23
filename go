@@ -6,7 +6,7 @@ makeEnv() {
 }
 
 build() {
-    sudo docker run --rm -v --link nexus:nexus $(pwd)/target:/build/target rrb package
+    sudo docker run --rm --link nexus -v $(pwd)/target:/build/target rrb package
 }
 
 clean() {
