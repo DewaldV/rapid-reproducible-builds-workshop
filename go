@@ -6,7 +6,7 @@ makeEnv() {
 }
 
 build() {
-    sudo docker run --rm -ti -v $(pwd)/target:/build/target rrb package
+    sudo docker run --rm -v $(pwd)/target:/build/target rrb package
 }
 
 clean() {
