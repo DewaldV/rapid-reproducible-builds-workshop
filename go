@@ -15,7 +15,7 @@ clean() {
 
 case ${1} in
     'makeEnv')
-    makeEnv)
+    makeEnv
     ;;
     'build')
     build
