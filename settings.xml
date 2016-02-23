@@ -1,0 +1,11 @@
+<settings xmlns="http://maven.apache.org/settings/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        >
+<mirrors>
+    <mirror>
+      <id>nexus</id>
+      <url>http://192.168.99.100:8081/content/groups/public/</url>
+      <mirrorOf>central</mirrorOf>
+    </mirror>
+  </mirrors>
+</settings>
