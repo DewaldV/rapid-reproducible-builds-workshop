@@ -6,7 +6,10 @@ makeEnv() {
 }
 
 build() {
-    sudo docker run --rm --link nexus -v $(pwd)/target:/build/target rrb package
+    target_dir="$(pwd)/target"
+    mkdir -p ${target_dir}
+    sudo docker run --rm --link nexus -v ${target_dir}:/build/target rrb package
+    sudo chown -R go:go target/
 }
 
 clean() {
