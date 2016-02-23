@@ -6,7 +6,7 @@ makeEnv() {
 }
 
 build() {
-    sudo docker run --rm --link nexus deploy
+    sudo docker run --rm --link nexus rrb deploy
 }
 
 clean() {
